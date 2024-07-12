@@ -65,7 +65,7 @@ fun ShoppingListApp() {
                 .padding(16.dp)
         ) {
             items(sItems){
-                ShoppingListItem(it, {})
+                ShoppingListItem(it, {}, {})
             }
         }
 
@@ -131,6 +131,7 @@ fun ShoppingListApp() {
 fun ShoppingListItem(
     item: ShoppingItem,
     onEditClick: () -> Unit,
+    onDeleteClick: () ->Unit
 ){
     Row(
         modifier = Modifier
