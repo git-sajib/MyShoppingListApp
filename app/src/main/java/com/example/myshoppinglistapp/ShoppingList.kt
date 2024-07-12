@@ -1,5 +1,6 @@
 package com.example.myshoppinglistapp
 
+import android.icu.text.Edits
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -11,8 +12,13 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -143,5 +149,15 @@ fun ShoppingListItem(
             )
     ) {
         Text(text = item.name, modifier = Modifier.padding(8.dp))
+        Text(text = "Qty: ${item.quantity}", modifier = Modifier.padding(8.dp))
+        Row(modifier = Modifier.padding(8.dp)) {
+            IconButton(onClick = { onEditClick }) {
+                Icon(imageVector = Icons.Default.Edit, contentDescription = "Edit")
+            }
+
+            IconButton(onClick = { onDeleteClick }) {
+                Icon(imageVector = Icons.Default.Delete, contentDescription = "Edit")
+            }
+        }
     }
 }
