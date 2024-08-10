@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                     ) {
-                    ShoppingListApp()
+                    //ShoppingListApp()
                 }
             }
         }
@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun ShoppingListAppPreview() {
-    ShoppingListApp()
+    //ShoppingListApp()
 }
 
 
