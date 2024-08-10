@@ -52,6 +52,7 @@ android {
 dependencies {
 
     implementation(libs.maps.compose)
+
     implementation(libs.play.services.location)
 
     implementation(libs.androidx.lifecycle.viewmodel.compose)
@@ -60,6 +61,8 @@ dependencies {
     implementation(libs.converter.gson)
 
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.android.maps.compose)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -69,6 +72,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
