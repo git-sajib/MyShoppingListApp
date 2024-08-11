@@ -51,17 +51,15 @@ android {
 
 dependencies {
 
-    implementation(libs.maps.compose)
-
+    implementation (libs.android.maps.compose)
+    implementation (libs.play.services.maps)
     implementation(libs.play.services.location)
 
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
-
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.android.maps.compose)
 
 
     implementation(libs.androidx.core.ktx)
